@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Simple Music Player UI</title>
+
+<style>
+body {
+  background: #111;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player {
+  background: #1e1e1e;
+  color: white;
+  width: 280px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.player img {
+  width: 140px;
+  margin-bottom: 15px;
+}
+
+.song-name {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.artist {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.progress {
+  width: 100%;
+  height: 6px;
+  background: #333;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress div {
+  width: 40%;
+  height: 100%;
+  background: #0d6efd;
+}
+
+/* Buttons */
+.controls {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  background: #333;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0d6efd;
+  transform: scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<div class="player">
+  <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png">
+
+  <div class="song-name">My Favorite Song</div>
+  <div class="artist">Unknown Artist</div>
+
+  <div class="progress">
+    <div></div>
+  </div>
+
+  <div class="controls">
+    <button>⏮</button>
+    <button>▶</button>
+    <button>⏭</button>
+  </div>
+</div>
+
+</body>
+</html>
